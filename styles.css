@@ -1,0 +1,115 @@
+/* Import Google Fonts for styling */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+
+/* Basic styling */
+body {
+  color: #003049;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  background-color: #eae2b7; /* light beige background */
+}
+
+/* Styling for headers to use serif font */
+h1, h2, h3 {
+  font-family: "Playfair Display", Times, serif;
+  text-align: center; /* Center all headings */
+}
+
+/* Differentiating heading sizes */
+h1 {
+  font-size: 2.5em; /* Larger for main titles */
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* Styling for articles and their content */
+article {
+  padding: 50px 0;
+  margin: 20px 0;
+  text-align: center; /* Center content for better focus */
+}
+
+/* Ensure list items (both bulleted and numbered) are centered correctly */
+ul, ol {
+  text-align: left; /* Align text inside lists to the left */
+  padding-left: 0; /* Remove default padding */
+  margin-left: auto; /* Center the list by setting left and right margins to auto */
+  margin-right: auto;
+  width: fit-content; /* Shrink-wrap the list content */
+}
+
+/* Adjusting paragraph line spacing */
+p {
+  line-height: 1.6;
+  text-align: center; 
+}
+
+/* Constrain divs to a manageable width */
+div {
+  margin: auto;
+  width: 600px;
+}
+
+/* Styling for images */
+img {
+  display: block; /* Make images block to allow margin auto to work */
+  margin: auto; /* Center-align images */
+  width: 100%;
+  max-width: 300px; /* Display larger images */
+  height: auto;
+}
+
+/* Horizontal rule styling */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #333;
+  margin-top: 40px;
+}
+
+/* Styling for navigation links */
+nav a {
+  color: #d62828;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f77f00;
+}
+
+/* Rounded images for profile */
+.image-circle {
+  border-radius: 50%; /* fully round */
+  border: 2px solid #003049; /* navy blue border */
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  div {
+    width: 95%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+}
