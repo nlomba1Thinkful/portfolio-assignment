@@ -9,7 +9,6 @@ body {
   background-color: #eae2b7; /* light beige background */
 }
 
-/* Styling for headers to use serif font and center navigation */
 header {
   display: flex;
   justify-content: center;
@@ -19,11 +18,11 @@ header {
 
 h1, h2, h3 {
   font-family: "Playfair Display", Times, serif;
-  text-align: center; /* Center all headings */
+  text-align: center;
 }
 
 h1 {
-  font-size: 2.5em; /* Larger for main titles */
+  font-size: 2.5em;
 }
 
 h2 {
@@ -37,16 +36,20 @@ h3 {
 article {
   padding: 50px 0;
   margin: 20px 0;
-  text-align: center; /* Center content for better focus */
+  text-align: center;
 }
 
-/* Centering list items */
 ul, ol {
   text-align: left;
   padding-left: 0;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
+}
+
+/* Adjusted contact section list alignment */
+#contact ol {
+  margin-left: 12em; /* Shifts the content slightly left */
 }
 
 p {
@@ -74,7 +77,6 @@ hr {
   margin-top: 40px;
 }
 
-/* Navigation link styles including centering */
 nav {
   display: flex;
   justify-content: center;
