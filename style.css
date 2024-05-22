@@ -9,11 +9,12 @@ body {
   background-color: #eae2b7; /* light beige background */
 }
 
+/* Header styling with horizontal alignment */
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Aligns items on both ends */
   align-items: center;
-  width: 100%;
+  padding: 10px 50px; /* Adds padding for spacing */
 }
 
 h1, h2, h3 {
@@ -22,7 +23,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5em; /* Larger for main titles */
 }
 
 h2 {
@@ -33,10 +34,56 @@ h3 {
   font-size: 1.5em;
 }
 
-article {
-  padding: 50px 0;
-  margin: 20px 0;
+/* About section alignment */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Evenly spaces children horizontally */
+  margin-top: 20px;
+}
+
+.profile-info {
+  max-width: 600px;
+  text-align: left; /* Aligns text to the left within its container */
+}
+
+/* Portfolio section styling */
+.portfolio-section {
+  padding: 50px;
+  background-color: #eae2b7;
+}
+
+.portfolio-section h2 {
   text-align: center;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: space-between; /* Spaces children with equal space between */
+  gap: 20px; /* Adds spacing between the projects */
+}
+
+.portfolio-container article {
+  flex: 1;
+  margin: 10px; /* Adds margin between articles */
+  padding: 20px;
+  background-color: #eae2b7; /* White background for articles */
+}
+
+.portfolio-container img {
+  width: 100%; /* Ensures images are responsive */
+  height: auto;
+}
+
+.portfolio-container p {
+  font-size: 14px; /* Sets the font size for the project descriptions */
+  padding-top: 10px; /* Adds space between the image and the text */
+  font-weight: bold;
+}
+
+.portfolio-container h3 {
+  font-size: 1.5em; /* Font size for article titles */
+  margin-bottom: 10px;
 }
 
 ul, ol {
@@ -49,7 +96,7 @@ ul, ol {
 
 /* Adjusted contact section list alignment */
 #contact ol {
-  margin-left: 12em; /* Shifts the content slightly left */
+  margin-left: 12em; /* Adjusted for slight left alignment */
 }
 
 p {
@@ -117,5 +164,19 @@ footer {
 
   nav a {
     padding: 10px;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-container article {
+    flex-basis: 100%;
+    margin-bottom: 20px;
   }
 }
