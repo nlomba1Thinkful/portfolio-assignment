@@ -41,7 +41,9 @@ nav a:hover {
   color: #f77f00;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
 }
@@ -61,11 +63,14 @@ h3 {
 /* About section alignment */
 .about-section {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-around; /* Evenly spaces children horizontally */
   margin-top: 20px;
 }
-
+.about_1 {
+  display: flex;
+  justify-content: space-around;
+}
 .profile-info {
   max-width: 600px;
   text-align: left; /* Aligns text to the left within its container */
@@ -110,27 +115,10 @@ h3 {
   margin-bottom: 10px;
 }
 
-ul, ol {
-  text-align: left;
-  padding-left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
-}
-
 /* Adjusted contact section list alignment */
-#contact ol {
-  margin-left: 40em; /* Adjusted for slight left alignment */
-}
 
 p {
   line-height: 1.6;
-  text-align: center;
-}
-
-div {
-  margin: auto;
-  width: 600px;
 }
 
 img {
@@ -171,10 +159,6 @@ footer {
 
   nav a {
     padding: 10px;
-  }
-
-  .about-section {
-    flex-direction: column;
   }
 
   .portfolio-container {
