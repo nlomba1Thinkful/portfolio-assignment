@@ -1,46 +1,14 @@
-/* Import Google Fonts for styling */
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
-/* Basic styling */
 body {
+  background-color: #eae2b7;
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
-  background-color: #eae2b7; /* light beige background */
 }
 
-/* Header styling with horizontal alignment */
-header {
-  display: flex;
-  justify-content: space-between; /* Aligns items on both ends */
-  align-items: center;
-  padding: 10px 50px; /* Adds padding for spacing */
-  background-color: #eae2b7; /* Matching background color */
-}
-
-header .logo {
-  font-family: "Playfair Display", serif;
-  font-size: 2.5em;
-  color: #003049;
-}
-
-nav {
-  display: flex;
-  align-items: center; /* Vertically centers navigation items */
-  gap: 20px; /* Adds spacing between nav items */
-}
-
-nav a {
-  color: #d62828;
-  text-decoration: none;
-  font-size: 1.2em;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #f77f00;
-}
-
+/* Headings */
 h1,
 h2,
 h3 {
@@ -48,126 +16,93 @@ h3 {
   text-align: center;
 }
 
-h1 {
-  font-size: 2.5em; /* Larger for main titles */
-}
-
-h2 {
-  font-size: 2em;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-/* About section alignment */
-.about-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; /* Evenly spaces children horizontally */
-  margin-top: 20px;
-}
-.about_1 {
-  display: flex;
-  justify-content: space-around;
-}
-.profile-info {
-  max-width: 600px;
-  text-align: left; /* Aligns text to the left within its container */
-}
-
-/* Portfolio section styling */
-.portfolio-section {
-  padding: 50px;
-  background-color: #eae2b7;
-}
-
-.portfolio-section h2 {
+/* Header */
+header {
   text-align: center;
 }
 
-.portfolio-container {
-  display: flex;
-  justify-content: space-between; /* Spaces children with equal space between */
-  gap: 20px; /* Adds spacing between the projects */
-}
-
-.portfolio-container article {
-  flex: 1;
-  margin: 10px; /* Adds margin between articles */
-  padding: 20px;
-  background-color: #eae2b7; /* Background color for articles */
-}
-
-.portfolio-container img {
-  width: 100%; /* Ensures images are responsive */
-  height: auto;
-}
-
-.portfolio-container p {
-  font-size: 14px; /* Sets the font size for the project descriptions */
-  padding-top: 10px; /* Adds space between the image and the text */
-  font-weight: bold;
-}
-
-.portfolio-container h3 {
-  font-size: 1.5em; /* Font size for article titles */
-  margin-bottom: 10px;
-}
-
-/* Adjusted contact section list alignment */
-
-p {
-  line-height: 1.6;
-}
-
-img {
-  display: block;
+/* Containers */
+div {
+  background-color: #eae2b7;
   margin: auto;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
+  width: 600px;
 }
 
-hr {
-  border: 0;
-  height: 1px;
-  background-color: #333;
-  margin-top: 40px;
+article {
+  padding: 50px 0;
+}
+
+article div {
+  text-align: center;
+  width: 100%;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.5;
+}
+
+/* Links */
+a:link {
+  color: #d62828;
+}
+
+a:hover {
+  color: #f77f00;
+}
+
+nav a {
+  text-align: center;
+  padding-left: 20px;
+}
+
+/* Images */
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
 }
 
 .image-circle {
-  border-radius: 50%;
+  align-items: left;
+  display: flex;
   border: 2px solid #003049;
+  border-radius: 50%;
 }
 
+/* Footer */
 footer {
   text-align: center;
-  padding: 20px 0;
-  color: #666;
-  font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-  div {
-    width: 95%;
-  }
+/* Other page elements */
+hr {
+  border: 1px solid black;
+}
 
-  img {
-    max-width: 100%;
-  }
+.headercontainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
 
-  nav a {
-    padding: 10px;
-  }
+.contactpete {
+  display: flex;
+  flex-direction: row;
+}
 
-  .portfolio-container {
-    flex-direction: column;
-    align-items: center;
-  }
+.row {
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+}
 
-  .portfolio-container article {
-    flex-basis: 100%;
-    margin-bottom: 20px;
-  }
+.bold {
+  font-weight: bold;
+  text-align: left;
+}
+
+.space {
+    padding: 25px
 }
